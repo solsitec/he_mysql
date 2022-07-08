@@ -19,7 +19,7 @@ $id = query("INSERT INTO persona (nombre, edad, nick)VALUES('Julio',30,'Cesar202
 if(isset($id["error"])){
 	echo "Ocurrio un Error";	
 }else{
-	echo "Insertado Correctamente";	
+	echo "Insertado Correctamente: "+$id;	
 }
 
 // SELECT ALL
