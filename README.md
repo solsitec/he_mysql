@@ -3,3 +3,5 @@
 
 * Desarrollado en la versión 7.4 de PHP
 
+Los Ejemplos de Uso estan dentro de cada carpeta segun versión.
+
