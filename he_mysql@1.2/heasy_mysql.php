@@ -1,13 +1,4 @@
 <?php 
-/*
-	Nombre: heasy_mysql
-	Versión: 1.2
-	Autor del Script: Luis Torres Carpio
-	Correo: luis.torres.carpio1@gmail.com
-	Descripción: 
-		Script para facilitar las consultas en Mysql desde PHP
-		Pensado para el desarrollo agil.
-*/
 class conexion{	
 	private $server;
 	private $user;
@@ -21,12 +12,12 @@ class conexion{
 		$this->server="127.0.0.1";
 		$this->user="root";
 		$this->clave="";
-		$this->db="test_libreria01";
+		$this->db="database_name";
 	}
 	public function conectar()
 	{
 		$this->conex=new mysqli($this->server,$this->user,$this->clave,$this->db);
-		$this->conex->set_charset("utf8");//save accent db
+		$this->conex->set_charset("utf8");
 	}
 	public function cerrar()
 	{
