@@ -9,10 +9,10 @@ class conexion{
 	
 	function __construct()
 	{	
-		$this->server="127.0.0.1";
+		$this->server="localhost";
 		$this->user="root";
 		$this->clave="";
-		$this->db="database_name";
+		$this->db="ltc.library.he_mysql";
 	}
 	public function conectar()
 	{
@@ -98,6 +98,9 @@ function query($consulta){
 			$mc->cerrar();
 		}
 	}
+}
+function var_info($var){
+	return "<pre style='color:white;background:black;'>".json_encode($var, JSON_PRETTY_PRINT)."</pre>";
 }
 function res($data){
 	if( gettype($data) == "string" )
